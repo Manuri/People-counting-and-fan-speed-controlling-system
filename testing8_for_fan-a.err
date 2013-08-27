@@ -1,0 +1,6 @@
+>>> Warning 203 "testing8_for_fan-a.c" Line 44(1,1): Condition always TRUE
+>>> Warning 202 "testing8_for_fan-a.c" Line 16(18,28): Variable never used:   noOfPeople
+>>> Warning 202 "testing8_for_fan-a.c" Line 20(13,19): Variable never used:   rayOne
+>>> Warning 202 "testing8_for_fan-a.c" Line 21(13,19): Variable never used:   rayTwo
+      Memory usage:   ROM=6%      RAM=8% - 10%
+      0 Errors,  4 Warnings.

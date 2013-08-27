@@ -1,0 +1,151 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+008     PSP_DATA
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028-029 noOfPeople
+02A     int_count
+02B     unitsPosition
+02C     tensPosition
+02D     hundredsPosition
+02E.0   rayOne
+02E.1   rayTwo
+02E.2   pin_changed
+02E.3   number_changed
+02F-030 mseconds
+031-032 counter_for_temp
+033-034 temperature
+035-036 t
+037     @TRIS_C
+038-039 lcd_display.number
+038     lcd_init.i
+038-039 @MUL1616.P1
+038     convertToCelsius.@SCRATCH
+038     initialDisplay.@SCRATCH
+038     phaseControl.@SCRATCH
+039     @delay_us1.P1
+039     lcd_init.@SCRATCH
+039     convertToCelsius.@SCRATCH
+03A     lcd_display.x
+03A-03B @MUL1616.P1
+03B     lcd_display.y
+03C     lcd_display.unitsPosition
+03C     @MUL1616.@SCRATCH
+03D     lcd_display.tensPosition
+03E     lcd_display.hundredsPosition
+03F-040 convertToASCII.number
+03F     lcd_display.@SCRATCH
+040     lcd_putc.c
+040     lcd_display.@SCRATCH
+041     lcd_gotoxy.x
+041     @delay_ms1.P1
+041     lcd_display.@SCRATCH
+042-043 @DIV1616.P1
+042     lcd_gotoxy.y
+043     lcd_gotoxy.address
+044-045 @DIV1616.P1
+044     lcd_gotoxy.@SCRATCH
+045     lcd_send_byte.address
+046     lcd_send_byte.n
+046     @DIV1616.@SCRATCH
+047     lcd_read_byte.low
+047     lcd_send_byte.@SCRATCH
+048     lcd_send_nibble.nibble
+048     lcd_read_byte.high
+049.0   lcd_read_nibble.retval_0
+049     lcd_read_nibble.retval
+049.1   lcd_read_nibble.retval_1
+049.2   lcd_read_nibble.retval_2
+049.3   lcd_read_nibble.retval_3
+049     lcd_read_byte.@SCRATCH
+04A     rayCrossed_isr.@SCRATCH
+04B     rayCrossed_isr.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D     @WRITE_PROGRAM_MEMORY.P1
+10D     @READ_PROGRAM_MEMORY.P2
+10F     @READ_PROGRAM_MEMORY.P1
+10F     @WRITE_PROGRAM_MEMORY.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+
+017E  @delay_ms1
+02FA  @delay_us1
+003A  @const53
+0192  lcd_send_nibble
+01BE  lcd_read_nibble
+01E7  lcd_read_byte
+01E3  lcd_send_byte
+040A  lcd_init
+0220  lcd_gotoxy
+0232  lcd_putc
+03E2  MAIN
+0094  clock_isr
+00CD  rayCrossed_isr
+00C7  setTimer
+009F  checkTimer
+04A8  convertToCelsius
+03CB  @MUL1616
+0257  @DIV1616
+049A  lcd_display_temperature
+027C  convertToASCII
+0285  lcd_display
+049A  read_temperature
+0407  initialDisplay
+0042  @const121
+0057  @const122
+006C  @const123
+007F  @const124
+010D  init_pic
+0309  phaseControl
+03E2  @cinit
+
+Project Files:
+    testing3+adc_c.c
+    p1.h
+    ..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+    flex_lcd.c
+
+Units:
+    C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.err
+    Ext Symbols: C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.esym
+    INHX8:       C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.hex
+    Symbols:     C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.sym
+    List:        C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.lst
+    Debug/COFF:  C:\Users\Amaya\Documents\CSE-Semester_3\Digital Electronics\project\onDesktop\only B0\testing\testing3+adc_c.cof
+    Call Tree:   testing3+adc_c.tre
+    Statistics:  testing3+adc_c.sta

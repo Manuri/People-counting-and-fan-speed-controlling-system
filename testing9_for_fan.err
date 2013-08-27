@@ -1,0 +1,5 @@
+>>> Warning 202 "testing9_for_fan.c" Line 16(18,28): Variable never used:   noOfPeople
+>>> Warning 202 "testing9_for_fan.c" Line 20(13,19): Variable never used:   rayOne
+>>> Warning 202 "testing9_for_fan.c" Line 21(13,19): Variable never used:   rayTwo
+      Memory usage:   ROM=9%      RAM=8% - 13%
+      0 Errors,  3 Warnings.

@@ -1,0 +1,88 @@
+
+ROM used: 756 (9%)
+          756 (9%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 31 (8%) at main() level
+          48 (13%) worst case
+
+Stack used: 6 worst case (out of 7 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  232    63  48  testing9_for_fan.c
+   29     0   0  p1.h
+  306     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+  242    68  52  flex_lcd.c
+----- -----
+  809   131 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   3   1             @delay_ms1
+0      8   1   0             @const53
+0     44   6   1   328  2.7  lcd_send_nibble
+0     37   5   1   362  2.3  lcd_read_nibble
+ Inline        3   165  3.3  lcd_read_byte
+0     61   8   3   319  4.1  lcd_send_byte
+ Inline        2   384  4.4  lcd_init
+0     18   2   4   186  5.5  lcd_gotoxy
+0     37   5   1   275  3.9  lcd_putc
+0     76  10   1   262  5.0  MAIN
+0     11   1   0    63  2.9  clock_isr
+0      4   1   0     3  0.0  rayCrossed_isr
+0     37   5   5             @DIV1616
+0      9   1   2    35  1.7  convertToASCII
+0    119  16  10   423  4.0  lcd_display
+0     84  11   1   125  1.6  initialDisplay
+0     11   1   0   483  2.4  @const120
+0      9   1   0             @const121
+0    113  15   0   455  2.4  init_pic
+
+Program metrics:
+    Functions               15
+    Statements              131
+    Comments                191
+    Volume (V)              6613
+    Difficilty (D)          47.4
+    Effort to implement (E) 313691
+    Time to implement (T)   4 hours, 50 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   11
+    Maintainability (MI)    70
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00039    54  0  
+0003A-007FF   698  1292  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const53
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    23    35    20     4    lcd_putc
+    11    22    32    20     2    MAIN
+     8     7    11     5     1    clock_isr
+     2     1     2     0     0    rayCrossed_isr
+     0     1     0     0     0    @DIV1616
+     5     6     6     4     0    convertToASCII
+     8    37    40    37     0    lcd_display
+     4    16    16    13     0    initialDisplay
+     5    44    44    42     0    @const120
+     0     1     0     0     0    @const121
+     5    42    42    40     0    init_pic

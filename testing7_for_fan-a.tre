@@ -1,0 +1,22 @@
+ÀÄtesting7_for_fan-a
+   ÃÄMAIN  0/63  Ram=0
+   ³  ÃÄ??0??
+   ³  ÃÄinit_pic  0/114  Ram=0
+   ³  ÀÄinitialDisplay  0/128  Ram=0
+   ³     ÃÄ@delay_ms1  0/20  Ram=1
+   ³     ÀÄlcd_init  (Inline)  Ram=2
+   ³        ÃÄ@delay_ms1  0/20  Ram=1
+   ³        ÃÄlcd_send_nibble  0/44  Ram=1
+   ³        ÃÄ@delay_ms1  0/20  Ram=1
+   ³        ÃÄlcd_send_nibble  0/44  Ram=1
+   ³        ÃÄ@const53  0/8  Ram=0
+   ³        ÀÄlcd_send_byte  (Inline)  Ram=3
+   ³           ÃÄlcd_read_byte  (Inline)  Ram=3
+   ³           ³  ÃÄlcd_read_nibble  0/37  Ram=1
+   ³           ³  ÀÄlcd_read_nibble  0/37  Ram=1
+   ³           ÃÄlcd_send_nibble  0/44  Ram=1
+   ³           ÀÄlcd_send_nibble  0/44  Ram=1
+   ÃÄclock_isr  0/11  Ram=0
+   ÀÄrayCrossed_isr  0/40  Ram=0
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÀÄ@delay_ms1  0/20  Ram=1

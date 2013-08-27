@@ -1,0 +1,155 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+008     PSP_DATA
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     noOfPeople
+02A     int_count
+02B     unitsPosition
+02C     tensPosition
+02D     hundredsPosition
+02E.0   rayOne
+02E.1   rayTwo
+02F-030 mseconds
+031-034 temperature
+035-038 t
+039     @TRIS_C
+03A     lcd_init.i
+03A     MAIN.@SCRATCH
+03B     lcd_init.@SCRATCH
+052     display_mseconds.unitsPosition
+052     lcd_display_no_of_people.unitsPosition
+052     rayCrossed_isr.@SCRATCH
+053     display_mseconds.tensPosition
+053     lcd_display_no_of_people.tensPosition
+054     display_mseconds.hundredsPosition
+054     lcd_display_no_of_people.hundredsPosition
+055     lcd_display_no_of_people.thousandsPosition
+055     display_mseconds.thousandsPosition
+056     lcd_putc.c
+056     lcd_display_no_of_people.@SCRATCH
+056     display_mseconds.@SCRATCH
+057     @delay_ms1.P1
+057     lcd_gotoxy.x
+057     lcd_display_no_of_people.@SCRATCH
+057     display_mseconds.@SCRATCH
+058     lcd_gotoxy.y
+058     lcd_display_no_of_people.@SCRATCH
+058     display_mseconds.@SCRATCH
+059     lcd_gotoxy.address
+059     @DIV88.P1
+059     lcd_display_no_of_people.@SCRATCH
+059     display_mseconds.@SCRATCH
+05A     @DIV88.P1
+05A-05B @DIV1616.P2
+05A     lcd_gotoxy.@SCRATCH
+05A     lcd_display_no_of_people.@SCRATCH
+05A     display_mseconds.@SCRATCH
+05B     lcd_send_byte.address
+05B     lcd_display_no_of_people.@SCRATCH
+05B     @DIV88.@SCRATCH
+05B     display_mseconds.@SCRATCH
+05C-05D @DIV1616.P1
+05C     lcd_send_byte.n
+05C     lcd_display_no_of_people.@SCRATCH
+05C     display_mseconds.@SCRATCH
+05D-060 @DIV3232.P1
+05D     lcd_read_byte.low
+05D     lcd_send_byte.@SCRATCH
+05E     lcd_read_byte.high
+05E     lcd_send_nibble.nibble
+05E     @DIV1616.@SCRATCH
+05F     lcd_read_nibble.retval
+05F.0   lcd_read_nibble.retval_0
+05F.1   lcd_read_nibble.retval_1
+05F.2   lcd_read_nibble.retval_2
+05F.3   lcd_read_nibble.retval_3
+05F     lcd_read_byte.@SCRATCH
+061-064 @DIV3232.P1
+065     @DIV3232.@SCRATCH
+066     @DIV3232.@SCRATCH
+067     @DIV3232.@SCRATCH
+068     @DIV3232.@SCRATCH
+069     @DIV3232.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D     @WRITE_PROGRAM_MEMORY.P1
+10D     @READ_PROGRAM_MEMORY.P2
+10F     @READ_PROGRAM_MEMORY.P1
+10F     @WRITE_PROGRAM_MEMORY.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+
+016B  @delay_ms1
+003A  @const53
+0101  lcd_send_nibble
+00C9  lcd_read_nibble
+00EE  lcd_read_byte
+012D  lcd_send_byte
+03E0  lcd_init
+0159  lcd_gotoxy
+017F  lcd_putc
+034E  MAIN
+0042  @const102
+004F  @const103
+0057  clock_isr
+031D  rayCrossed_isr
+0317  setTimer
+01A4  checkTimer
+0087  @DIV3232
+0285  lcd_display_no_of_people
+0270  @DIV88
+0062  @DIV1616
+01A4  display_mseconds
+034E  @cinit
+
+Project Files:
+    testing3.c
+    p1.h
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+    flex_lcd.c
+
+Units:
+    C:\Users\Amaya\Desktop\only B0\testing\testing3.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Amaya\Desktop\only B0\testing\testing3.err
+    Ext Symbols: C:\Users\Amaya\Desktop\only B0\testing\testing3.esym
+    INHX8:       C:\Users\Amaya\Desktop\only B0\testing\testing3.hex
+    Symbols:     C:\Users\Amaya\Desktop\only B0\testing\testing3.sym
+    List:        C:\Users\Amaya\Desktop\only B0\testing\testing3.lst
+    Debug/COFF:  C:\Users\Amaya\Desktop\only B0\testing\testing3.cof
+    Call Tree:   testing3.tre
+    Statistics:  testing3.sta

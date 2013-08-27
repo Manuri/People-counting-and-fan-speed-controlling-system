@@ -1,0 +1,149 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A noOfPeople
+01B.0   number_changed
+01B.1   pin_changed
+01B.2   rayOne
+01B.3   rayTwo
+01C     int_count
+01D     unitsPosition
+01E     tensPosition
+01F     hundredsPosition
+020-021 mseconds
+022-023 temperature
+024-025 temp_changed
+026-027 t
+028-029 pre_t
+02A     lcd_init.i
+02A-02B lcd_display.number
+02A-02B @MUL1616.P1
+02A     convertToCelsius.@SCRATCH
+02A     read_temperature.@SCRATCH
+02A     initialDisplay.@SCRATCH
+02B     lcd_init.@SCRATCH
+02B     convertToCelsius.@SCRATCH
+02C     lcd_display.x
+02C-02D @MUL1616.P1
+02C     lcd_init.@SCRATCH
+02D     lcd_display.y
+02E     lcd_display.unitsPosition
+02E     @MUL1616.@SCRATCH
+02F     lcd_display.tensPosition
+030     lcd_display.hundredsPosition
+031-032 convertToASCII.number
+031     lcd_display.@SCRATCH
+032     lcd_putc.c
+032     lcd_display.@SCRATCH
+033     lcd_gotoxy.x
+033     lcd_display.@SCRATCH
+034-035 @DIV1616.P1
+034     lcd_gotoxy.y
+035     lcd_gotoxy.address
+036-037 @DIV1616.P1
+036     lcd_gotoxy.@SCRATCH
+037     lcd_send_byte.address
+038     lcd_send_byte.n
+038     @DIV1616.@SCRATCH
+039     lcd_read_byte.low
+039     lcd_send_byte.@SCRATCH
+03A     lcd_read_byte.high
+03A     lcd_send_nibble.nibble
+03B     lcd_read_nibble.retval
+03B.0   lcd_read_nibble.retval_0
+03B.1   lcd_read_nibble.retval_1
+03B.2   lcd_read_nibble.retval_2
+03B.3   lcd_read_nibble.retval_3
+03B     lcd_read_byte.@SCRATCH
+03C     rayCrossed_isr.@SCRATCH
+03C     phaseControl.@SCRATCH
+03D     @delay_ms1.P1
+F83     PSP_DATA
+FBB-FBC CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE-FBF CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+01CE  @delay_ms1
+00B6  @const49
+0332  lcd_send_nibble
+0376  lcd_read_nibble
+03A8  lcd_read_byte
+03CC  lcd_send_byte
+040E  lcd_init
+047E  lcd_gotoxy
+04A0  lcd_putc
+079C  MAIN
+0182  clock_isr
+01F4  rayCrossed_isr
+01C0  setTimer
+0198  checkTimer
+070E  convertToCelsius
+06EE  @MUL1616
+04F0  @DIV1616
+0532  convertToASCII
+0542  lcd_display
+074C  read_temperature
+0626  initialDisplay
+00D4  @const118
+0100  @const119
+012C  @const120
+0156  @const121
+02C8  init_pic
+024C  phaseControl
+079C  @cinit
+
+Project Files:
+    testing5_change+fan_18F452.c
+    p2.h
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\18F452.h
+    flex_lcd.c
+
+Units:
+    C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.err
+    Ext Symbols: C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.esym
+    INHX32:      C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.hex
+    Symbols:     C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.sym
+    List:        C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.lst
+    Debug/COFF:  C:\Users\Amaya\Desktop\only B0\testing\testing5_change+fan_18F452.cof
+    Call Tree:   testing5_change+fan_18F452.tre
+    Statistics:  testing5_change+fan_18F452.sta

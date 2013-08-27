@@ -1,0 +1,149 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+008     PSP_DATA
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029-02A noOfPeople
+02B     int_count
+02C     unitsPosition
+02D     tensPosition
+02E     hundredsPosition
+02F.0   rayOne
+02F.1   rayTwo
+02F.2   pin_changed
+02F.3   number_changed
+02F.4   temp_changed
+030-031 mseconds
+032-033 temperature
+034-035 t
+036-037 pre_t
+038     @TRIS_C
+039-03A @MUL1616.P1
+039-03A lcd_display.number
+039     lcd_init.i
+039     convertToCelsius.@SCRATCH
+039     read_temperature.@SCRATCH
+039     initialDisplay.@SCRATCH
+03A     lcd_init.@SCRATCH
+03A     convertToCelsius.@SCRATCH
+03B     lcd_display.x
+03B-03C @MUL1616.P1
+03C     lcd_display.y
+03D     lcd_display.unitsPosition
+03D     @MUL1616.@SCRATCH
+03E     lcd_display.tensPosition
+03F     lcd_display.hundredsPosition
+040-041 convertToASCII.number
+040     lcd_display.@SCRATCH
+041     lcd_putc.c
+041     lcd_display.@SCRATCH
+042     lcd_gotoxy.x
+042     lcd_display.@SCRATCH
+043     lcd_gotoxy.y
+043-044 @DIV1616.P1
+044     lcd_gotoxy.address
+045-046 @DIV1616.P1
+045     lcd_gotoxy.@SCRATCH
+046     lcd_send_byte.address
+047     lcd_send_byte.n
+047     @DIV1616.@SCRATCH
+048     lcd_read_byte.low
+048     lcd_send_byte.@SCRATCH
+049     lcd_send_nibble.nibble
+049     lcd_read_byte.high
+04A.0   lcd_read_nibble.retval_0
+04A     lcd_read_nibble.retval
+04A.1   lcd_read_nibble.retval_1
+04A.2   lcd_read_nibble.retval_2
+04A.3   lcd_read_nibble.retval_3
+04A     lcd_read_byte.@SCRATCH
+04B     @delay_ms1.P1
+04B     rayCrossed_isr.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D     @READ_PROGRAM_MEMORY.P1
+10D     @WRITE_PROGRAM_MEMORY.P2
+10F     @READ_PROGRAM_MEMORY.P1
+10F     @WRITE_PROGRAM_MEMORY.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+
+00BE  @delay_ms1
+003A  @const53
+0170  lcd_send_nibble
+019C  lcd_read_nibble
+01C5  lcd_read_byte
+01C1  lcd_send_byte
+0320  lcd_init
+01FE  lcd_gotoxy
+0210  lcd_putc
+02F5  MAIN
+0094  clock_isr
+00D2  rayCrossed_isr
+00B8  setTimer
+009F  checkTimer
+03F1  convertToCelsius
+02DE  @MUL1616
+023B  @DIV1616
+03CC  lcd_display_temperature
+0260  convertToASCII
+0269  lcd_display
+03CC  read_temperature
+0317  initialDisplay
+0042  @const123
+0057  @const124
+006C  @const125
+007F  @const126
+00FF  init_pic
+02F5  @cinit
+
+Project Files:
+    testing4-a.c
+    p1.h
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+    flex_lcd.c
+
+Units:
+    C:\Users\Amaya\Desktop\only B0\testing\testing4-a.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Amaya\Desktop\only B0\testing\testing4-a.err
+    Ext Symbols: C:\Users\Amaya\Desktop\only B0\testing\testing4-a.esym
+    INHX8:       C:\Users\Amaya\Desktop\only B0\testing\testing4-a.hex
+    Symbols:     C:\Users\Amaya\Desktop\only B0\testing\testing4-a.sym
+    List:        C:\Users\Amaya\Desktop\only B0\testing\testing4-a.lst
+    Debug/COFF:  C:\Users\Amaya\Desktop\only B0\testing\testing4-a.cof
+    Call Tree:   testing4-a.tre
+    Statistics:  testing4-a.sta

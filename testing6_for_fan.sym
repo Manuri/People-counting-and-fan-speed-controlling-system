@@ -1,0 +1,84 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+008     PSP_DATA
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028-029 noOfPeople
+02A     int_count
+02B     unitsPosition
+02C     tensPosition
+02D     hundredsPosition
+02E.0   rayOne
+02E.1   rayTwo
+02F-030 mseconds
+031-032 temperature
+033-034 t
+035     y
+036     @TRIS_C
+037     @delay_ms1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D     @WRITE_PROGRAM_MEMORY.P1
+10D     @READ_PROGRAM_MEMORY.P2
+10F     @READ_PROGRAM_MEMORY.P1
+10F     @WRITE_PROGRAM_MEMORY.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+
+0045  @delay_ms1
+0115  MAIN
+003A  clock_isr
+0059  rayCrossed_isr
+009A  @goto10202
+00A3  init_pic
+0115  @cinit
+
+Project Files:
+    testing6_for_fan.c
+    p1.h
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+    flex_lcd.c
+
+Units:
+    C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.err
+    Ext Symbols: C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.esym
+    INHX8:       C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.hex
+    Symbols:     C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.sym
+    List:        C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.lst
+    Debug/COFF:  C:\Users\Amaya\Desktop\only B0\testing\testing6_for_fan.cof
+    Call Tree:   testing6_for_fan.tre
+    Statistics:  testing6_for_fan.sta

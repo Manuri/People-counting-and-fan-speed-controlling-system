@@ -1,0 +1,82 @@
+
+ROM used: 677 (8%)
+          677 (8%) including unused fragments
+
+          1 Average locations per line
+          4 Average locations per statement
+
+RAM used: 30 (8%) at main() level
+          41 (11%) worst case
+
+Stack used: 6 worst case (out of 7 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  297    98  59  testing8_for_fan.c
+   29     0   0  p1.h
+  306     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+  242    68  41  flex_lcd.c
+----- -----
+  874   166 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   3   1             @delay_ms1
+0      8   1   0             @const53
+0     44   6   1   328  2.7  lcd_send_nibble
+0     37   5   1   362  2.3  lcd_read_nibble
+ Inline        3   165  3.3  lcd_read_byte
+0     61   9   3   319  4.1  lcd_send_byte
+ Inline        2   384  4.4  lcd_init
+0     18   3   4   186  5.5  lcd_gotoxy
+0     37   5   1   275  3.9  lcd_putc
+0    165  24   0  1233  6.3  MAIN
+0      9   1   0    63  2.9  @goto10194
+0     11   2   0    63  2.9  clock_isr
+0     84  12   1   125  1.6  initialDisplay
+0     11   2   0             @const122
+0      9   1   0   483  2.4  @const123
+0    112  17   0   428  2.4  init_pic
+
+Program metrics:
+    Functions               13
+    Statements              166
+    Comments                206
+    Volume (V)              7180
+    Difficilty (D)          45.6
+    Effort to implement (E) 327556
+    Time to implement (T)   5 hours, 3 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   21
+    Maintainability (MI)    91
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00032    47  0  
+00033-007FF   626  1371  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const53
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    23    35    20     4    lcd_putc
+    13    77   115    75    11    MAIN
+     8     7    11     5     1    @goto10194
+     8     7    11     5     1    clock_isr
+     4    16    16    13     0    initialDisplay
+     0     1     0     0     0    @const122
+     5    44    44    42     0    @const123
+     5    40    40    38     0    init_pic

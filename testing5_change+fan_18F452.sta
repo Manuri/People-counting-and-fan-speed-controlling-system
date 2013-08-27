@@ -1,0 +1,102 @@
+
+ROM used: 2072 (6%)
+          2072 (6%) including unused fragments
+
+          2 Average locations per line
+          11 Average locations per statement
+
+RAM used: 42 (3%) at main() level
+          62 (4%) worst case
+
+Stack used: 9 worst case (out of 29 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  265   121  64  testing5_change+fan_18F452.c
+   29     0   0  p2.h
+  327     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\18F452.h
+  242    68  36  flex_lcd.c
+----- -----
+  863   189 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1   1             @delay_ms1
+0     30   1   0             @const49
+0     68   2   1   328  2.7  lcd_send_nibble
+0     50   1   1   362  2.3  lcd_read_nibble
+0     36   1   3   165  3.3  lcd_read_byte
+0     66   2   3   319  4.1  lcd_send_byte
+0    112   3   3   384  4.4  lcd_init
+0     34   1   4   186  5.5  lcd_gotoxy
+0     80   2   1   275  3.9  lcd_putc
+0    128   3   0   253  3.2  MAIN
+0     22   1   0    63  2.9  clock_isr
+0     88   2   1   489  4.3  rayCrossed_isr
+0     14   0   0    50  1.5  setTimer
+0     40   1   0    90  3.4  checkTimer
+0     62   1   2    35  1.8  convertToCelsius
+0     32   1   5             @MUL1616
+0     66   2   5             @DIV1616
+0     16   0   2    35  1.7  convertToASCII
+0    228   6  10   423  4.0  lcd_display
+0     80   2   1   130  2.6  read_temperature
+0    200   5   1   315  1.8  initialDisplay
+0     44   1   0             @const118
+0     44   1   0             @const119
+0     42   1   0             @const120
+0     44   1   0             @const121
+0    106   3   0   609  2.4  init_pic
+0    124   3   1   572  8.1  phaseControl
+
+Program metrics:
+    Functions               19
+    Statements              189
+    Comments                150
+    Volume (V)              9005
+    Difficilty (D)          64.9
+    Effort to implement (E) 584801
+    Time to implement (T)   9 hours, 1 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   26
+    Maintainability (MI)    55
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B4   174  0  
+000B6-07FFE  1894  30692  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const49
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    23    35    20     4    lcd_putc
+     7    22    32    20     2    MAIN
+     8     7    11     5     1    clock_isr
+     9    36    55    34     6    rayCrossed_isr
+     4     8     8     6     0    setTimer
+     9     8    16     6     1    checkTimer
+     6     5     7     3     0    convertToCelsius
+     0     1     0     0     0    @MUL1616
+     0     1     0     0     0    @DIV1616
+     5     6     6     4     0    convertToASCII
+     8    37    40    37     0    lcd_display
+     6    14    18    12     1    read_temperature
+     4    32    32    29     0    initialDisplay
+     0     1     0     0     0    @const118
+     0     1     0     0     0    @const119
+     0     1     0     0     0    @const120
+     0     1     0     0     0    @const121
+     5    53    53    51     0    init_pic
+    17    40    60    38     7    phaseControl

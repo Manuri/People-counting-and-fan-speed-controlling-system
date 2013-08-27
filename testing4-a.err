@@ -1,0 +1,4 @@
+>>> Warning 203 "testing4-a.c" Line 48(1,1): Condition always TRUE
+>>> Warning 216 "testing4-a.c" Line 301(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+      Memory usage:   ROM=13%      RAM=8% - 14%
+      0 Errors,  2 Warnings.

@@ -1,0 +1,13 @@
+ÀÄtesting6_for_fan
+   ÃÄMAIN  0/81  Ram=0
+   ³  ÃÄ??0??
+   ³  ÀÄinit_pic  0/114  Ram=0
+   ÃÄclock_isr  0/11  Ram=0
+   ÀÄrayCrossed_isr  0/65  Ram=0
+      ÃÄ@goto10202  0/9  Ram=0
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÀÄ@delay_ms1  0/20  Ram=1

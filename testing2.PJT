@@ -1,0 +1,37 @@
+[PROJECT]
+Target=testing2.HEX
+Development_Mode=2
+Processor=0x877A
+ToolSuite=CCS
+Processor_Text=PIC16F877A
+
+[Directories]
+Include=
+Library=
+LinkerScript=
+
+[Target Data]
+FileList=C:\Users\Amaya\Desktop\only B0\testing\testing2.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+
+[testing2.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+
+[mru-list]
+1=testing2.c
+
+[Windows]
+0=0000 testing2.c 0 0 796 451 3 0
+
+[Units]
+Count=1
+1=testing2.c (main)
+Link=0

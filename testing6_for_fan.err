@@ -1,0 +1,5 @@
+>>> Warning 203 "testing6_for_fan.c" Line 42(1,1): Condition always TRUE
+>>> Warning 202 "testing6_for_fan.c" Line 20(13,19): Variable never used:   rayOne
+>>> Warning 202 "testing6_for_fan.c" Line 21(13,19): Variable never used:   rayTwo
+      Memory usage:   ROM=4%      RAM=8% - 8%
+      0 Errors,  3 Warnings.

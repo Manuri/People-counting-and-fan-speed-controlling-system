@@ -1,0 +1,105 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A noOfPeople
+01B     int_count
+01C     unitsPosition
+01D     tensPosition
+01E     hundredsPosition
+01F.0   rayOne
+01F.1   rayTwo
+020-021 mseconds
+022-023 temperature
+024-025 t
+026     y
+027     x
+028     lcd_init.i
+029     lcd_init.@SCRATCH
+02A     lcd_init.@SCRATCH
+02B     lcd_send_byte.address
+02C     lcd_send_byte.n
+02D     lcd_read_byte.low
+02D     lcd_send_byte.@SCRATCH
+02E     lcd_send_nibble.nibble
+02E     lcd_read_byte.high
+02F.0   lcd_read_nibble.retval_0
+02F     lcd_read_nibble.retval
+02F.1   lcd_read_nibble.retval_1
+02F.2   lcd_read_nibble.retval_2
+02F.3   lcd_read_nibble.retval_3
+02F     lcd_read_byte.@SCRATCH
+030     @delay_ms1.P1
+F83     PSP_DATA
+FBB-FBC CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE-FBF CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+00DE  @delay_ms1
+00AA  @const49
+01A4  lcd_send_nibble
+01E8  lcd_read_nibble
+021A  lcd_read_byte
+023E  lcd_send_byte
+0282  lcd_init
+030A  MAIN
+00C8  clock_isr
+0104  rayCrossed_isr
+02F2  initialDisplay
+013C  init_pic
+030A  @cinit
+
+Project Files:
+    testing7_for_fan-a_18f452.c
+    p2.h
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\18F452.h
+    flex_lcd.c
+
+Units:
+    C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.err
+    Ext Symbols: C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.esym
+    INHX32:      C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.hex
+    Symbols:     C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.sym
+    List:        C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.lst
+    Debug/COFF:  C:\Users\Amaya\Desktop\only B0\testing\testing7_for_fan-a_18f452.cof
+    Call Tree:   testing7_for_fan-a_18f452.tre
+    Statistics:  testing7_for_fan-a_18f452.sta

@@ -1,0 +1,11 @@
+>>> Warning 203 "testing2.c" Line 73(1,1): Condition always TRUE
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (lcd_send_nibble)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (lcd_send_byte)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (lcd_gotoxy)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (lcd_putc)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (lcd_display_no_of_people)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV1616)
+>>> Warning 216 "testing2.c" Line 270(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV3232)
+      Memory usage:   ROM=15%      RAM=9% - 22%
+      0 Errors,  9 Warnings.

@@ -1,0 +1,72 @@
+
+ROM used: 862 (3%)
+          862 (3%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 40 (3%) at main() level
+          49 (3%) worst case
+
+Stack used: 7 worst case (out of 29 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  209    71  51  testing7_for_fan-a_18f452.c
+   29     0   0  p2.h
+  327     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\18F452.h
+  242    68  49  flex_lcd.c
+----- -----
+  807   139 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   2   1             @delay_ms1
+0     30   2   0             @const49
+0     68   4   1   328  2.7  lcd_send_nibble
+0     50   3   1   362  2.3  lcd_read_nibble
+0     36   2   3   165  3.3  lcd_read_byte
+0     68   4   3   319  4.1  lcd_send_byte
+0    112   6   3   384  4.4  lcd_init
+0     88   5   0   202  3.1  MAIN
+0     22   1   0    63  2.9  clock_isr
+0     56   3   0   209  3.1  rayCrossed_isr
+0     24   1   0    27  0.9  initialDisplay
+0    104   6   0   538  2.4  init_pic
+
+Program metrics:
+    Functions               10
+    Statements              139
+    Comments                160
+    Volume (V)              4185
+    Difficilty (D)          29.9
+    Effort to implement (E) 124999
+    Time to implement (T)   1 hours, 56 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   10
+    Maintainability (MI)    92
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000A8   162  0  
+000AA-07FFE   696  31902  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const49
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+     7    17    29    15     3    MAIN
+     8     7    11     5     1    clock_isr
+     7    18    29    16     3    rayCrossed_isr
+     3     5     6     3     0    initialDisplay
+     5    48    48    46     0    init_pic

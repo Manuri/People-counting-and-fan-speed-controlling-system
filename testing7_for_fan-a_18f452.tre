@@ -1,0 +1,22 @@
+ÀÄtesting7_for_fan-a_18f452
+   ÃÄMAIN  0/88  Ram=0
+   ³  ÃÄ??0??
+   ³  ÃÄinit_pic  0/104  Ram=0
+   ³  ÀÄinitialDisplay  0/24  Ram=0
+   ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³     ÀÄlcd_init  0/112  Ram=3
+   ³        ÃÄ@delay_ms1  0/38  Ram=1
+   ³        ÃÄlcd_send_nibble  0/68  Ram=1
+   ³        ÃÄ@delay_ms1  0/38  Ram=1
+   ³        ÃÄlcd_send_nibble  0/68  Ram=1
+   ³        ÃÄ@const49  0/30  Ram=0
+   ³        ÀÄlcd_send_byte  0/68  Ram=3
+   ³           ÃÄlcd_read_byte  0/36  Ram=3
+   ³           ³  ÃÄlcd_read_nibble  0/50  Ram=1
+   ³           ³  ÀÄlcd_read_nibble  0/50  Ram=1
+   ³           ÃÄlcd_send_nibble  0/68  Ram=1
+   ³           ÀÄlcd_send_nibble  0/68  Ram=1
+   ÃÄclock_isr  0/22  Ram=0
+   ÀÄrayCrossed_isr  0/56  Ram=0
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÀÄ@delay_ms1  0/38  Ram=1

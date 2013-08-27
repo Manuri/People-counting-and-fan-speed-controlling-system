@@ -1,0 +1,92 @@
+
+ROM used: 1248 (15%)
+          1248 (15%) including unused fragments
+
+          1 Average locations per line
+          7 Average locations per statement
+
+RAM used: 33 (9%) at main() level
+          80 (22%) worst case
+
+Stack used: 13 worst case (out of 1 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  269   121  64  testing2.c
+   29     0   0  p1.h
+  306     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+  242    68  36  flex_lcd.c
+----- -----
+  846   189 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   2   1             @delay_ms1
+0      8   1   0             @const53
+0     44   4   1   328  2.7  lcd_send_nibble
+0     37   3   1   362  2.3  lcd_read_nibble
+0     19   2   3   165  3.3  lcd_read_byte
+0     44   4   3   319  4.1  lcd_send_byte
+ Inline        2   384  4.4  lcd_init
+0     18   1   4   186  5.5  lcd_gotoxy
+0     37   3   1   275  3.9  lcd_putc
+0    587  47   1   811  3.8  MAIN
+0     13   1   0             @const104
+0      8   1   0             @const105
+0     11   1   0    63  2.9  clock_isr
+0     63   5   1   619  5.3  rayCrossed_isr
+0      5   0   0    50  1.5  setTimer
+0      6   0   0    47  1.8  checkTimer
+0     66   5  13             @DIV3232
+0    146  12  11   524  4.3  lcd_display_no_of_people
+0     21   2   3             @DIV88
+0     37   3   5             @DIV1616
+ Inline       11   524  4.3  display_mseconds
+
+Program metrics:
+    Functions               14
+    Statements              189
+    Comments                164
+    Volume (V)              7726
+    Difficilty (D)          50.2
+    Effort to implement (E) 387772
+    Time to implement (T)   5 hours, 59 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   16
+    Maintainability (MI)    54
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00039    54  0  
+0003A-007FF  1190  800  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const53
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    23    35    20     4    lcd_putc
+     8    65    69    62     1    MAIN
+     0     1     0     0     0    @const104
+     0     1     0     0     0    @const105
+     8     7    11     5     1    clock_isr
+    11    44    65    42     6    rayCrossed_isr
+     4     8     8     6     0    setTimer
+     5     7     8     5     0    checkTimer
+     0     1     0     0     0    @DIV3232
+     9    43    51    41     0    lcd_display_no_of_people
+     0     1     0     0     0    @DIV88
+     0     1     0     0     0    @DIV1616
+     9    43    51    41     0    display_mseconds

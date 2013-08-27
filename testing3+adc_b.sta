@@ -1,0 +1,106 @@
+
+ROM used: 1960 (24%)
+          1960 (24%) including unused fragments
+
+          2 Average locations per line
+          9 Average locations per statement
+
+RAM used: 31 (8%) at main() level
+          73 (20%) worst case
+
+Stack used: 12 worst case (out of 1 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  305   153  69  testing3+adc_b.c
+   29     0   0  p1.h
+  306     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+  242    68  31  flex_lcd.c
+----- -----
+  882   221 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   1   1             @delay_ms1
+0     15   1   1             @delay_us1
+0      8   0   0             @const53
+0     44   2   1   328  2.7  lcd_send_nibble
+0     37   2   1   362  2.3  lcd_read_nibble
+0     19   1   3   165  3.3  lcd_read_byte
+0     44   2   3   319  4.1  lcd_send_byte
+ Inline        2   384  4.4  lcd_init
+0     18   1   4   186  5.5  lcd_gotoxy
+0     37   2   1   275  3.9  lcd_putc
+0    179   9  11   524  4.3  display_mseconds
+0     37   2   5   300  4.1  @DIV1616
+0     66   3  13    63  2.9  @DIV3232
+0   1162  59   0   300  4.1  MAIN
+0     11   1   0    63  2.9  clock_isr
+0     68   3   2   783  5.3  rayCrossed_isr
+0      6   0   0    50  1.5  setTimer
+0     40   2   0   141  4.1  checkTimer
+ Inline        0    33  1.3  lcd_display_temperature
+0      9   0   2    35  1.7  convertToASCII
+ Inline       10   423  4.0  lcd_display
+ Inline        1   315  1.8  initialDisplay
+0     21   1   0             @const130
+0     21   1   0             @const131
+0     19   1   0   483  2.4  @const132
+0     21   1   0   483  2.4  @const133
+ Inline        0   483  2.4  init_pic
+ Inline        1   900  5.8  phaseControl
+
+Program metrics:
+    Functions               23
+    Statements              221
+    Comments                142
+    Volume (V)              13263
+    Difficilty (D)          79.3
+    Effort to implement (E) 1052249
+    Time to implement (T)   16 hours, 14 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   32
+    Maintainability (MI)    68
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00039    54  0  
+0003A-007FF  1902  88  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @delay_us1
+     0     1     0     0     0    @const53
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    23    35    20     4    lcd_putc
+     9    43    51    41     0    display_mseconds
+     9    25    36    23     2    @DIV1616
+     8     7    11     5     1    @DIV3232
+     9    25    36    23     2    MAIN
+     8     7    11     5     1    clock_isr
+    11    52    81    50     8    rayCrossed_isr
+     4     8     8     6     0    setTimer
+    10    11    23     9     2    checkTimer
+     4     6     6     4     0    lcd_display_temperature
+     5     6     6     4     0    convertToASCII
+     8    37    40    37     0    lcd_display
+     4    32    32    29     0    initialDisplay
+     0     1     0     0     0    @const130
+     0     1     0     0     0    @const131
+     5    44    44    42     0    @const132
+     5    44    44    42     0    @const133
+     5    44    44    42     0    init_pic
+    12    62    85    60     8    phaseControl

@@ -1,0 +1,102 @@
+
+ROM used: 1072 (13%)
+          1072 (13%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 33 (9%) at main() level
+          52 (14%) worst case
+
+Stack used: 7 worst case (out of 6 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  268   118  63  testing5_change+fan.c
+   29     0   0  p1.h
+  306     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+  242    68  37  flex_lcd.c
+----- -----
+  845   186 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   2   1             @delay_ms1
+0      8   1   0             @const53
+0     44   4   1   328  2.7  lcd_send_nibble
+0     37   3   1   362  2.3  lcd_read_nibble
+ Inline        3   165  3.3  lcd_read_byte
+0     61   6   3   319  4.1  lcd_send_byte
+ Inline        2   384  4.4  lcd_init
+0     18   2   4   186  5.5  lcd_gotoxy
+0     43   4   1   275  3.9  lcd_putc
+0    242  23   0   280  3.2  MAIN
+0     11   1   0    63  2.9  clock_isr
+0     45   4   1   489  4.3  rayCrossed_isr
+0      6   1   0    50  1.5  setTimer
+0     25   2   0    90  3.4  checkTimer
+ Inline        2    35  1.8  convertToCelsius
+0     23   2   5             @MUL1616
+0     37   3   5             @DIV1616
+0      9   1   2    35  1.7  convertToASCII
+0    117  11  10   423  4.0  lcd_display
+0     73   7   1   130  2.6  read_temperature
+ Inline        1   315  1.8  initialDisplay
+0     21   2   0   315  1.8  @const123
+0     21   2   0             @const124
+0     19   2   0             @const125
+0     21   2   0             @const126
+0    113  11   0   483  2.4  init_pic
+
+Program metrics:
+    Functions               19
+    Statements              186
+    Comments                151
+    Volume (V)              8471
+    Difficilty (D)          58.9
+    Effort to implement (E) 498855
+    Time to implement (T)   7 hours, 42 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   18
+    Maintainability (MI)    55
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00039    54  0  
+0003A-007FF  1014  976  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @const53
+     6    29    38    26     0    lcd_send_nibble
+     5    40    30    36     0    lcd_read_nibble
+     7    17    20    16     0    lcd_read_byte
+     9    31    32    28     1    lcd_send_byte
+    10    35    39    31     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    23    35    20     4    lcd_putc
+     7    25    33    23     1    MAIN
+     8     7    11     5     1    clock_isr
+     9    36    55    34     6    rayCrossed_isr
+     4     8     8     6     0    setTimer
+     9     8    16     6     1    checkTimer
+     6     5     7     3     0    convertToCelsius
+     0     1     0     0     0    @MUL1616
+     0     1     0     0     0    @DIV1616
+     5     6     6     4     0    convertToASCII
+     8    37    40    37     0    lcd_display
+     6    14    18    12     1    read_temperature
+     4    32    32    29     0    initialDisplay
+     4    32    32    29     0    @const123
+     0     1     0     0     0    @const124
+     0     1     0     0     0    @const125
+     0     1     0     0     0    @const126
+     5    44    44    42     0    init_pic

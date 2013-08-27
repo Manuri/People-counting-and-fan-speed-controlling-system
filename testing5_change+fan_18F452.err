@@ -1,0 +1,4 @@
+>>> Warning 203 "testing5_change+fan_18F452.c" Line 46(1,1): Condition always TRUE
+>>> Warning 216 "testing5_change+fan_18F452.c" Line 266(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+      Memory usage:   ROM=6%      RAM=3% - 4%
+      0 Errors,  2 Warnings.
